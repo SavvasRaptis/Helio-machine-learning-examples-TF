@@ -8,7 +8,7 @@ For the Python scripts you need to install anaconda with [tensorflow](https://ww
  ```concole
  conda create -n ML_tensor spyder numpy matplotlib seaborn scikit-learn pandas
  conda activate ML_tensor
-  conda install tensorflow
+ conda install tensorflow
  conda install -c conda-forge jupyterlab
  ```
 
