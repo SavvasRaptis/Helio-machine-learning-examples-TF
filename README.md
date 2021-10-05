@@ -6,12 +6,13 @@ Some simple machine learning examples using Keras and the MNIST database
 For the Python scripts you need to install anaconda with [tensorflow](https://www.tensorflow.org/) and some other libraries. To do so, install [Anaconda](https://docs.anaconda.com/anaconda/install/windows/) and run Anaconda Prompt Terminal. From there create an environment and update the packages via the following code:
 
  ```concole
- conda create -n ML_Tensor_2 spyder matplotlib seaborn scikit-learn pandas
- conda activate ML_Tensor_2
- conda install tensorflow
+ conda create -n ML_tensor spyder numpy matplotlib seaborn scikit-learn pandas
+ conda activate ML_tensor
+  conda install tensorflow
+ conda install -c conda-forge jupyterlab
  ```
 
-Then you can open Spyder IDE with the interpreter being the virtual environment "ML_Tensor_2".
+Then you can open Spyder IDE with the interpreter being the virtual environment "ML_tensor". Alternatively, you can start a Jupyter notebook session and read the notebooks of this repository.
 
 ## Alternative solution
 
