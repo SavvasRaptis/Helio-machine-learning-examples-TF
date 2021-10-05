@@ -18,7 +18,7 @@ Then you can open Spyder IDE with the interpreter being the virtual environment 
 
 You may also run the notebooks from the cloud through Binder. Keep in mind this might be a bit slow. 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SavvasRaptis/machine-learning-examples-SR/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SavvasRaptis/machine-learning-examples/HEAD)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
