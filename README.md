@@ -1,3 +1,4 @@
+
 # Machine Learning Examples
 
 Some simple machine learning examples using Keras and the MNIST database
@@ -13,6 +14,11 @@ From there create an environment and update the packages via the following code:
  pip install tensorflow
  conda install spyder numpy matplotlib seaborn scikit-learn pandas
  conda install -c conda-forge jupyterlab
+ ```
+ 
+ Optionally you can run:
+ 
+ ```concole
  conda update -n base -c defaults conda
  conda update --all
  ```
