@@ -14,6 +14,7 @@ From there create an environment and update the packages via the following code:
  pip install tensorflow
  conda install spyder numpy matplotlib seaborn scikit-learn pandas
  conda install -c conda-forge jupyterlab
+ pip install keras-tuner --upgrade
  ```
  
  Optionally you can run:
