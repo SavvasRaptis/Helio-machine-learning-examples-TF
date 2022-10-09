@@ -139,8 +139,6 @@ def deeper_model(nin,number_of_classes,optimizer_choice,scaling_factor):
 def simple_model(nin,number_of_classes,optimizer_choice,scaling_factor):
     model = keras.Sequential()
     model.add(Input(shape=(nin,)))
-    model.add(BatchNormalization())
-    model.add(ReLU())
     model.add(Dense(40))
     model.add(BatchNormalization())
     model.add(ReLU())
