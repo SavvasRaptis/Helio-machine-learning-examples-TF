@@ -1,7 +1,9 @@
 
 # Machine Learning Examples
 
-Some simple machine learning examples using Keras and the MNIST database
+Some simple machine learning examples using Keras and the MNIST database along with examples from solar and space physics.
+
+See relevant slides from Space Physics 1 course at KTH [slides](lecture slides).
 ## Python instalation
 
 For the Python scripts you need to install anaconda with [tensorflow](https://www.tensorflow.org/) and some other libraries. To do so, install [Anaconda](https://docs.anaconda.com/anaconda/install/windows/) and run Anaconda Prompt Terminal. Alternatively one can use the [miniconda version](https://docs.conda.io/en/latest/miniconda.html).
