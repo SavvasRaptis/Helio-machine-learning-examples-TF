@@ -14,17 +14,9 @@ From there create an environment and update the packages via the following code:
  conda create -n ML_tensor python=3.9
  conda activate ML_tensor
  pip install tensorflow
- conda install spyder numpy matplotlib seaborn scikit-learn pandas
- conda install -c conda-forge jupyterlab
+ conda install spyder numpy matplotlib seaborn scikit-learn pandas jupyterlab
  pip install keras-tuner --upgrade
  conda install -c conda-forge xgboost
- ```
- 
- Optionally you can run:
- 
- ```concole
- conda update -n base -c defaults conda
- conda update --all
  ```
 
 Then you can open Spyder IDE with the interpreter being the virtual environment "ML_tensor". Alternatively, you can start a Jupyter notebook session and read the notebooks of this repository.
