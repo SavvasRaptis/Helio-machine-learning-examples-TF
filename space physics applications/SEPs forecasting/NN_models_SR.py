@@ -52,6 +52,24 @@ def weighted_categorical_crossentropy(weights):
     
     return loss
 
+def matthews_correlation(y_true, y_pred):
+    y_pred_pos = K.round(K.clip(y_pred, 0, 1))
+    y_pred_neg = 1 - y_pred_pos
+
+    y_pos = K.round(K.clip(y_true, 0, 1))
+    y_neg = 1 - y_pos
+
+    tp = K.sum(y_pos * y_pred_pos)
+    tn = K.sum(y_neg * y_pred_neg)
+
+    fp = K.sum(y_neg * y_pred_pos)
+    fn = K.sum(y_pos * y_pred_neg)
+
+    numerator = (tp * tn - fp * fn)
+    denominator = K.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn))
+
+    return 1.0 - numerator / (denominator + K.epsilon())
+
 def precision_m(y_true, y_pred):
         true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
         predicted_positives = K.sum(K.round(K.clip(y_pred, 0, 1)))
@@ -132,7 +150,7 @@ def deeper_model(nin,number_of_classes,optimizer_choice,scaling_factor):
     model.compile(
               optimizer=optimizer_choice,
               loss=weighted_categorical_crossentropy(np.array([1,scaling_factor])),
-              metrics=['acc',f1_m,precision_m, recall_m])
+              metrics=['acc',f1_m,precision_m, recall_m,matthews_correlation])
     return model
 
 
@@ -148,5 +166,5 @@ def simple_model(nin,number_of_classes,optimizer_choice,scaling_factor):
     model.compile(
               optimizer=optimizer_choice,
               loss=weighted_categorical_crossentropy(np.array([1,scaling_factor])),
-              metrics=['acc',f1_m,precision_m, recall_m])
+              metrics=['acc',f1_m,precision_m, recall_m,matthews_correlation])
     return model
