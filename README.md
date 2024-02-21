@@ -1,5 +1,5 @@
 
-# Machine Learning Examples
+# Machine Learning Examples in Heliophysics Using Tensorflow
 
 Some simple machine learning examples using Keras and the MNIST database along with examples from solar and space physics.
 
